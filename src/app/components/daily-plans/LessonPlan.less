@@ -1,0 +1,37 @@
+@import '../../../theme/_variables.less';
+
+.lesson-plan {
+  // margin: @padding-sm 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+
+    .recital-name {
+      font-size: 18px;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .options {
+      display: flex;
+      align-items: center;
+
+      .option {
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0 @padding-sm / 2;
+        user-select: none;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

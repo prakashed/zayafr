@@ -1,0 +1,54 @@
+@import '../../../theme/_variables.less';
+
+.teacher-item {
+  &:hover {
+    background: #eee;
+  }
+
+  .teacher-meta {
+    flex: 0;
+  }
+
+  p {
+    color: darkgrey;
+  }
+}
+
+.teacher-details-view.details-view {
+  .teacher-title.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: @padding-lg;
+
+    h1 {
+      margin: 0;
+    }
+
+    i {
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+
+  .profile-pic {
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    margin: @padding-lg 0;
+    background: lightgrey;
+  }
+
+  .teacher-details.details {
+    display: flex;
+
+    > div > div {
+      padding-bottom: @padding-sm/2;
+    }
+
+    .title {
+      font-weight: bold;
+      margin-right: @padding-lg;
+    }
+  }
+}

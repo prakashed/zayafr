@@ -1,0 +1,69 @@
+@import '../../../theme/_variables.less';
+
+.add-annual-plan-container {
+  form {
+    ul {
+      padding-left: 20px;
+
+      .list-item {
+        white-space: nowrap;
+      }
+
+      i {
+        cursor: pointer;
+        margin-right: @padding-sm/2;
+      }
+
+      li:last-child {
+        cursor: pointer;
+        list-style: none;
+        margin-left: -20px;
+      }
+    }
+
+    .recital-instrument-section {
+      .recital-instrument-item {
+        span {
+          margin-right: @padding-md;
+        }
+      }
+    }
+
+    .quarter-section {
+      .quarter-item {
+        .dates {
+          margin: 0 12px;
+          font-style: italic;
+          font-size: 12px;
+          color: lightslategray;
+        }
+      }
+    }
+
+    .add-data-section {
+      .show-form-btn {
+        cursor: pointer;
+      }
+
+      .selection-input {
+        > div {
+          margin: @padding-sm/2 0;
+        }
+        .add-close-btns {
+          display: flex;
+
+          button {
+            margin-right: @padding-sm;
+            font-size: 14px;
+          }
+        }
+        // i {
+        //   cursor: pointer;
+        //   font-size: @padding-lg;
+        //   margin-right: @padding-sm;
+        //   display: inline-block;
+        // }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../theme/_variables.less';
+
+.select-school-container {
+  width: 100%;
+  height: 100%;
+
+  .header {
+    color: navajowhite;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+
+  .content {
+    padding: 20px;
+
+    .school-search {
+      width: 20%;
+      margin-bottom: 20px;
+    }
+
+    .school-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      /* height: calc(100% - 64px); */
+      grid-gap: 20px;
+
+      .school-card {
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+}

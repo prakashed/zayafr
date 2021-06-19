@@ -1,0 +1,44 @@
+@import '../../../theme/_variables.less';
+
+.add-reflection {
+  .field-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0 6px 0;
+  }
+
+  .reason-area {
+    .reason-field {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 60px;
+  
+      .ant-select, textarea {
+        width: 300px;
+      }
+    }
+  }
+
+  .bar-progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    .ant-input-number {
+      margin-left: 12px;
+    }
+  }
+
+  .add-progress {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 6px 0;
+    border-bottom: 1px dashed;
+  }
+}

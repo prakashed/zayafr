@@ -1,0 +1,170 @@
+@import '../../../theme/_variables.less';
+
+@media only screen and (max-width: 767px) {
+  .view-annual-plan {
+    .annual-plan-meta {
+      flex-direction: column;
+      align-items: flex-start !important;
+
+      .meta-info {
+        margin-bottom: @padding-md;
+        margin-right: 0 !important;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.view-annual-plan {
+  .annual-plan-meta {
+    display: flex;
+    margin-bottom: @padding-md;
+    align-items: center;
+
+    .meta-info {
+      display: inherit;
+      align-items: center;
+      margin-right: @padding-md;
+
+      .label {
+        margin-right: @padding-sm;
+        color: darkslategray;
+      }
+
+      .data {
+        font-style: italic;
+        color: gray;
+      }
+    }
+  }
+
+  .quarter-plans {
+    display: flex;
+    flex: 1;
+    overflow-x: scroll;
+
+    .quarter {
+      border: 1px solid lightgray;
+      border-radius: 4px;
+      width: 276px;
+      margin-right: @padding-sm;
+      padding: @padding-sm/2 @padding-sm;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        display: flex;
+        white-space: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: @padding-sm;
+
+        h3 {
+          margin: 0;
+        }
+
+        span {
+          font-size: 12px;
+          font-style: italic;
+          color: gray;
+        }
+      }
+
+      .lessons {
+        flex: 1;
+        overflow: auto;
+
+        .ant-collapse {
+          .ant-collapse-item {
+            .ant-collapse-header {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .add-lesson {
+        text-align: center;
+        cursor: pointer;
+        margin-top: @padding-sm/2;
+        opacity: 0.75;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        color: @primary-color;
+
+        i {
+          margin-right: @padding-sm/2;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.unit-lesson-tree {
+  .ant-tree-node-selected {
+    background: transparent;
+  }
+
+  li {
+    .ant-tree-switcher {
+      vertical-align: inherit;
+      width: 12px;
+    }
+
+    .ant-tree-node-content-wrapper {
+      &:hover {
+        background-color: white;
+      }
+
+      span.ant-tree-iconEle {
+        width: 0px;
+      }
+    }
+
+    &.add-new-lesson {
+      span.ant-tree-iconEle {
+        width: 24px;
+      }
+    }
+  }
+  
+  li.category {
+    ul {
+      margin-left: @padding-lg;
+
+      li.lesson {
+        list-style-type: disc;
+  
+        .ant-tree-switcher {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.manage-lessons-in-quarter {
+  .recital-selection {
+    .label {
+      margin-right: @padding-lg;
+      color: @heading-color;
+      display: inline-block;
+    }
+    
+    .ant-select {
+      min-width: 50%;
+    }
+  }
+
+  .unit-selection {
+    li.lesson {
+      list-style: none !important;
+    }
+  }
+}

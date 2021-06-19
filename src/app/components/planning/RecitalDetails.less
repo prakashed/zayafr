@@ -1,0 +1,99 @@
+@import '../../../theme/_variables.less';
+
+.recital-details-view {
+  .recital-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // height: 48px;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .meta-data {
+    color: rgba(38, 38, 38, 0.55);
+    margin: 8px 0;
+  }
+
+  // .grade-instruments {
+  //   display: flex;
+  //   height: 60px;
+
+  //   .title {
+  //     font-weight: bold;
+  //     margin-right: 24px;
+  //   }
+
+  //   > div > div {
+  //     padding-bottom: 6px;
+  //   }
+  // }
+
+  .instrument-lesson-tree {
+    .ant-tree-node-selected {
+      background: transparent;
+    }
+
+    li {
+      .ant-tree-switcher {
+        vertical-align: inherit;
+        width: 12px;
+      }
+
+      .ant-tree-node-content-wrapper {
+        &:hover {
+          background-color: white;
+        }
+
+        span.ant-tree-iconEle {
+          width: 0px;
+        }
+      }
+
+      &.add-new-lesson {
+        span.ant-tree-iconEle {
+          width: 24px;
+        }
+      }
+    }
+    
+    li.category {
+      ul {
+        margin-left: 50px;
+
+        li.lesson {
+          list-style-type: disc;
+    
+          .ant-tree-switcher {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .lesson-group-container {
+    height: ~"calc(100% - 108px)";
+    overflow: auto;
+
+    .lesson-group-title > div:first-child {
+      font-size: @padding-lg;
+    }
+  
+    .lesson-group {
+      .lesson-details {
+        padding: @padding-sm/2 0;
+  
+        .title {
+          font-weight: bold;
+        }
+        .data {
+          margin: 0;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import '../../../theme/_variables.less';
+
+.add-new-lesson.add-new-structured-lesson {
+  .step-content.step-1 {
+    .book-picker {
+      width: 50%;
+    }
+  }
+
+  .step-content.step-2 {
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: @padding-sm;
+    }
+
+    .search-units {
+      padding: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 4px 4px 0 0;
+
+      .ant-input-prefix {
+        left: 16px;
+        font-size: 20px;
+      }
+
+      input {
+        height: 36px;
+      }
+    }
+
+    .units-container {
+      height: ~"calc(100% - 48px - 14px)";
+      overflow-y: auto;
+      
+      .ant-collapse {
+        border-radius: 0 0 4px 4px;
+      }
+      // border-top: none;
+
+      .unit {
+
+        &.ant-collapse-item-active {
+          .panel-title {
+            > i {
+              transform: rotate(180deg) !important;
+            }
+          }
+        }
+        
+        .ant-collapse-header {
+          padding: 16px 12px;
+
+          .panel-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            > i {
+              transform: rotate(0);
+              transition: transform 0.25s ease;
+              font-size: 18px;
+            }
+          }
+        }
+        
+        .ant-collapse-content {
+          border: none;
+
+          .ant-collapse-content-box {
+            padding: 0;
+
+            .activity-title {
+              border-bottom: 1px solid lightgrey;
+              background: #eaeaea;
+              padding: 3px 0;
+              padding-left: 24px;
+            }
+            .piece {
+              border-bottom: 1px solid lightgrey;
+              padding: 2px 0;
+              padding-left: 36px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

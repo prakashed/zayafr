@@ -1,0 +1,45 @@
+@import '../../../theme/_variables.less';
+
+.lesson-assessment-activity-table {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+
+  .table-header {
+    display: flex;
+    background: #f1f1f1;
+
+    .column-header {
+      padding: 6px 12px;
+      font-weight: bold;
+      font-size: 18px;
+      border-right: 1px solid gray;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .table-body {
+    .row {
+      display: flex;
+      border-bottom: 1px solid gray;
+
+      &:last-child {
+        border: none;
+      }
+
+      .column {
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        border-right: 1px solid gray;
+
+        &:last-child {
+          border: none;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

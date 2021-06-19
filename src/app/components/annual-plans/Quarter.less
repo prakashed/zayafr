@@ -1,0 +1,23 @@
+@import '../../../theme/_variables.less';
+
+.quarter {
+  .quarter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: @padding-sm;
+
+    &:hover {
+      i {
+        transform: scale(1);
+      }
+    }
+
+    i {
+      font-size: 14px;
+      transform: scale(0);
+      transition: transform 0.15s ease-in;
+      transition-delay: 0.1s;
+    }
+  }
+}

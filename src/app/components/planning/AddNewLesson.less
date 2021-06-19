@@ -1,0 +1,207 @@
+@import '../../../theme/_variables.less';
+
+.add-new-lesson {
+  height: 80%;
+  width: 60% !important;
+
+  .ant-modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .ant-modal-title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .ant-modal-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .steps-container {
+        display: flex;
+        flex: 1;
+        padding: @padding-lg;
+
+        .ant-steps.ant-steps-vertical {
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+        }
+
+        .steps-content-container {
+          margin-left: @padding-sm;
+          width: calc(~"100% - 200px");
+
+          .step-content {
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+
+            &.step-2 {
+              overflow: hidden;
+            }
+
+            // &:not(.step-2) {
+            //   overflow-y: auto;
+            // }
+          }
+
+          .step-1 {
+            p {
+              margin: 0;
+              margin-bottom: @padding-sm/2;
+            }
+
+            .category-picker {
+              width: 100%;
+            }
+          }
+
+          .book-unit.step-2 {
+
+            .search-results {
+              height: calc(~"100% - 72px");
+
+              .result-list {
+                height: calc(~"100% - 36px");
+                overflow-y: auto;
+              }
+
+              > p {
+                margin: 0;
+                margin-top: @padding-sm;
+                color: lightgray;
+              }
+
+              .unit-search-result {
+                &.active {
+                  background: lightgray;
+                }
+                
+                cursor: pointer;
+                padding-left: @padding-sm;
+
+                > div.ant-list-item-content {
+                  flex-direction: column;
+                  width: 100%;
+                }
+  
+                .title {
+                  margin: 0;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  width: 100%;
+                  text-overflow: ellipsis;
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: black;
+                }
+                .details {
+                  color: gray;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  width: 100%;
+                  text-overflow: ellipsis;
+                }
+              }
+            }
+
+          }
+
+          .outcome-activities.step-3 {
+            .selected-unit {
+              .title {
+                font-size: 24px;
+                color: black;
+              }
+              .book {
+                font-size: 14px;
+                color: lightgray;
+              }
+            }
+
+            .selection-table {
+              margin-top: @padding-lg;
+              // height: calc(~"100% - 96px");
+
+              .row {
+                &.header {
+                  font-weight: bold;
+                  margin-bottom: @padding-sm/2;
+                  font-size: 14px;
+                }
+
+                .col {
+                  &:first-child {
+                    text-align: left;
+                  }
+                  text-align: center;
+                }
+              }
+
+              // .selection-rows {
+              //   // height: calc(~"100% - 48px");
+              //   // overflow: auto;
+              // }
+            }
+          }
+
+          .review.step-4 {
+            // > p {
+            //   margin: 0;
+            // }
+            .section {
+              display: flex;
+              margin-bottom: @padding-sm;
+              align-items: center;
+
+              span {
+                margin-right: @padding-sm;
+                font-size: 16px;
+              }
+            }
+
+            .title {
+              p {
+                font-size: 24px;
+                margin: 0;
+              }
+            }
+
+            .review-section-container {
+              // height: calc(~"100% - 46px");
+              // overflow: auto;
+          
+              .review-section {
+                .section-title {
+                  font-weight: bold;
+                }
+    
+                ul {
+                  padding-left: 20px;
+                  margin: 0;
+                }
+  
+                input {
+                  margin: @padding-sm/2;
+                  width: calc(100% ~"-" @padding-sm);
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      .steps-action {
+        text-align: right;
+        padding: 12px;
+        border-top: 1px solid lightgray;
+      }
+    }
+  }
+  
+}

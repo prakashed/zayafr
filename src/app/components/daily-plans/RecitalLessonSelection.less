@@ -1,0 +1,100 @@
+@import '../../../theme/_variables.less';
+
+@media only screen and (max-width: 767px) {
+  .daily-plan-recital-selection {
+    width: 95% !important;
+
+    .ant-modal-body {
+      flex-direction: column;
+
+      .add-lessons-steps {
+        flex-direction: row;
+
+        .ant-steps-item {
+          display: flex !important;
+          align-items: center;
+          height: 24px;
+          margin-right: 0px !important;
+
+          .ant-steps-item-icon {
+            height: 24px !important;
+            width: 24px !important;
+            line-height: 24px !important;
+            font-size: 16px !important;
+            margin-right: 4px !important;
+          }
+
+          .ant-steps-item-content {
+            min-height: 24px !important;
+
+            .ant-steps-item-title {
+              font-size: 16px !important;
+              padding-right: 4px !important;
+            }
+          }
+        }
+      }
+
+      .step-2 {
+        margin-top: 12px;
+        .recital-name {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .daily-plan-recital-selection {
+    width: 65% !important;
+
+    .add-lessons-steps {
+      width: 30% !important;
+      flex-direction: column;
+    }
+
+    .step-2 {
+      .recital-name {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+.daily-plan-recital-selection {
+  .ant-modal-body {
+    display: flex;
+    min-height: 25vw;
+
+    .add-lessons-steps {
+      display: flex;
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .select-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 12px 0;
+  
+      span.label {
+        margin-right: 24px;
+      }
+  
+      .select-dropdown {
+        flex: 1;
+      }
+    }
+
+    .step-2 {
+      .recital-name {
+        margin-top: 24px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

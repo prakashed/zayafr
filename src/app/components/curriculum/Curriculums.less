@@ -1,0 +1,60 @@
+@import '../../../theme/_variables.less';
+
+@media only screen and (max-width: 767px) {
+  .curriculum-instruments > div {
+    font-size: 12px !important;
+  }
+
+  .action-buttons {
+    display: none;
+  }
+}
+
+
+.view-search-filters {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 -15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.curriculum.view-list-item {
+  position: relative;
+  margin: 10px 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  .curriculum-details {
+    line-height: 24px;
+  }
+
+  .curriculum-instruments > div {
+    font-size: 14px;
+  }
+
+  .badge {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    background: #C82828;
+    color: white;
+    padding: 4px 5px;
+    font-size: 12px;
+    width: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: capitalize;
+
+    &.red {
+      background-color: #c82828;
+    }
+
+    
+    &.yellow {
+      background-color: #ffd05b;
+      color: #000;
+    }
+  }
+}

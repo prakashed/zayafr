@@ -1,0 +1,18 @@
+{
+  "entity": {
+    "curriculum": "curriculum",
+    "recital": "recital",
+    "school": "school",
+    "cluster": "cluster",
+    "book": "book",
+    "activity": "activity",
+    "classroom": "classroom",
+    "annualPlans": "annualplan",
+    "dailyPlans": "dailyplan"
+  },
+  "action": {
+    "add": "add",
+    "change": "change",
+    "delete": "delete"
+  }
+}

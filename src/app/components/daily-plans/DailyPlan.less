@@ -1,0 +1,27 @@
+@import '../../../theme/_variables.less';
+
+.daily-plan-filters {
+  > div {
+    display: flex;
+  }
+  .ant-select, .ant-calendar-picker {
+    margin: 3px;
+    width: 120px;
+  }
+}
+
+.daily-plan-item {
+  display: flex;
+  align-items: center;
+
+  .details {
+    flex: 1;
+  }
+
+  .completed-icon {
+    width: 20px;
+    font-size: 20px;
+    color: mediumseagreen;
+    margin-right: @padding-sm;
+  }
+}

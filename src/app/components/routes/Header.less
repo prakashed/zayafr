@@ -1,0 +1,47 @@
+@import '../../../theme/_variables.less';
+
+@media only screen and (max-width: 767px) {
+  .account-menu {
+    .section {
+      .profile {
+        font-size: 12px;
+        margin-right: 24px !important;
+      }
+
+      button {
+        font-size: 14px !important;
+        padding: 0 8px !important;
+        height: 28px !important;
+      }
+    }
+  }
+}
+
+.account-popup {
+  cursor: pointer;
+}
+
+.account-menu {
+  // width: 400px;
+
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: @padding-sm/2 0;
+
+    h2, h3 {
+      margin: 0;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-right: 2*@padding-lg;
+
+      h2 {
+        margin-left: @padding-sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import '../../../theme/_variables.less';
+
+@media only screen and (max-width: 767px) {
+  .menu-btn {
+    display: block !important;
+    cursor: pointer;
+    margin-right: 14px;
+    font-size: 18px;
+  }
+
+  .view-header {
+    margin: 0 -12px !important;
+    padding: 12px !important;
+
+    .title {
+      font-size: 18px;
+    }
+
+    .account-popup {
+      .username {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.menu-btn {
+  display: none;
+}
+
+.view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f3f3;
+  margin: -@padding-md;
+  padding: @padding-md;
+  margin-bottom: 0;
+
+  .title-container {
+    flex: 1;
+    
+    .title {
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+
+  .account-popup {
+    user-select: none;
+    margin-left: 8px;
+
+    > span {
+      display: flex;
+    }
+
+    .username {
+      margin-left: 8px;
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-left: 4px;
+      }
+    }
+  }
+}
